@@ -6,6 +6,10 @@ in 120 cloc (156 lines). One C file, one header.
 The `Keccak-f[1600]` permutation is fully unrolled; it's nearly as fast
 as the Keccak team's optimized permutation.
 
+## Attributions
+
+Original fork was probably from: https://github.com/coruus/keccak-tiny
+
 ## Building
 
     > clang -O3 -march=native -std=c11 -Wextra -dynamic -shared keccak-tiny.c -o libkeccak-tiny.dylib
